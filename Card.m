@@ -10,4 +10,20 @@
 
 @implementation Card
 
+
+
+
+
+-(int)match:(Card *)aCard
+{
+    if([aCard.contents isEqualToString:self.contents])
+    {
+        return 1;
+    }
+    return 0;
+}
+
+
+
+
 @end
